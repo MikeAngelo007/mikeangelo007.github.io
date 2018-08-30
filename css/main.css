@@ -141,7 +141,7 @@ h3{
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
     font-size: 1.2em;
-    margin-top: 20px;
+    margin:0 auto;
     display: inline-block;
     transition: all 0.3s ease-out;
 
@@ -169,6 +169,7 @@ h3{
 .float-right{
     float: right;
 }
+
 
 ul{
     list-style: none;
@@ -332,7 +333,7 @@ div.basica p{
     color: white;
     font-family: 'Oswald', sans-serif;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 div.informacion{
     position: relative;
@@ -365,12 +366,40 @@ div.project-text h2{
     color: #e33000;
 }
 
+div.conjunto{
+    width: 70%;
+    margin: 0 auto;
+    clear: both;
+}
+
+div.project{
+    float: left;
+    width: 33.3%;
+    padding: 5px;
+    text-align: center;
+}
+
+h4.project-title{
+    color: #e8f610;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+p.description-project{
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    height: 135px;
+    font-size: 1.2em;
+}
+
 
 
 /* Footer */
 footer.site-footer{
     background: #353535;
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 footer.site-footer p{
