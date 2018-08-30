@@ -227,6 +227,12 @@ ul{
      text-transform: uppercase;
  }
 
+ @media only screen and (max-width:768px){
+    div.informacion-inicial p{
+        font-size: 3em;
+    }
+ }
+
  
 p.slogan{
     text-transform: none!important;
@@ -369,6 +375,7 @@ div.project-text h2{
 div.conjunto{
     width: 70%;
     margin: 0 auto;
+    text-align: center;
     clear: both;
 }
 
@@ -377,6 +384,13 @@ div.project{
     width: 33.3%;
     padding: 5px;
     text-align: center;
+}
+
+@media only screen and (max-width:768px){
+    div.project{
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 h4.project-title{
