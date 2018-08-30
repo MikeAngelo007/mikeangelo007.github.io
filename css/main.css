@@ -158,12 +158,25 @@ h3{
 .button.transparente{
     background: transparent;
     border: 2px solid white;
+    margin:0 5px;
+    text-shadow: 1px 1px 5px black;
 }
 .button.transparente:hover{
-    border: 2px solid #fe4918;
+    border: 2px solid #6b6b73;
+    text-shadow: none;
+}
+
+
+
+@media only screen and (max-width:768px){
+    .button.transparente{
+        width: 50%;
+        display: block;
+        margin:5px auto;
+    }
 }
 .button:hover{
-    background: #e33000;
+    background: #3a444e;
 }
 
 .float-right{
@@ -233,6 +246,13 @@ ul{
     }
  }
 
+ div.botones-navegacion{
+     margin: 0 auto;
+     text-align: center;
+     width: 70%;
+     padding: 20px;
+ }
+
  
 p.slogan{
     text-transform: none!important;
@@ -259,15 +279,29 @@ h1.name-header{
 /* Barra */
 /**interes*/
 div.intereses{
-    background: #353535;
+    position: relative;
+    height: auto;
+}
+
+div.intereses::before{
+    /*Imagen de fondo del contador (Falla en Cloud9)*/
+    background-image: url(../img/gamer.jpg);
+    content: '';
+}
+div.intereses{
     padding: 20px 0;
 }
+
+div.description-interes{
+    position: relative;
+}
 h2.interes-title{
-    color: #BCBEC9;
+    color: #044a6b;
+    text-shadow: 3px 3px 5px #11819d;
 }
 
 div.intereses p{
-    color: #999;
+    color: white;
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-size: 1.5em;
@@ -370,6 +404,7 @@ div.project-text{
 
 div.project-text h2{
     color: #e33000;
+    text-shadow: 3px 3px 12px black;
 }
 
 div.conjunto{
@@ -396,6 +431,7 @@ div.project{
 h4.project-title{
     color: #e8f610;
     font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 10px black;
     font-size: 1.8em;
     text-transform: uppercase;
     margin: 20px 0;
@@ -403,11 +439,16 @@ h4.project-title{
 
 p.description-project{
     color: white;
+    text-shadow: 1px 1px 10px black;
     font-family: 'PT Sans', sans-serif;
     height: 135px;
     font-size: 1.2em;
 }
-
+@media only screen and (max-width:768px){
+    p.description-project{
+        height: auto;
+    }
+}
 
 
 /* Footer */
