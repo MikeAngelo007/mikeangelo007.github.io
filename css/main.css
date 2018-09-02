@@ -156,7 +156,7 @@ h3{
 }
 
 .button.transparente{
-    background: transparent;
+    background-color: rgba(116,103,118,0.32);
     border: 2px solid white;
     margin:0 5px;
     text-shadow: 1px 1px 5px black;
@@ -168,9 +168,17 @@ h3{
 
 
 
-@media only screen and (max-width:768px){
+@media only screen and (min-width:449px) and (max-width:768px){
     .button.transparente{
         width: 50%;
+        display: block;
+        margin:5px auto;
+    }
+}
+
+@media only screen and (max-width:448px){
+    .button.transparente{
+        width: 100%;
         display: block;
         margin:5px auto;
     }
