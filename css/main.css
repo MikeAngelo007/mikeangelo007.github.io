@@ -427,6 +427,9 @@ div.project{
     width: 33.3%;
     padding: 5px;
     text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (max-width:768px){
@@ -456,6 +459,43 @@ p.description-project{
     p.description-project{
         height: auto;
     }
+}
+
+
+/* Estudios */
+
+div.estudios{
+    position: relative;
+    height: auto;
+}
+
+div.estudios::before{
+    /*Imagen de fondo del contador (Falla en Cloud9)*/
+    background-image: url(../img/Estudio.jpg);
+    content: '';
+}
+
+div.study{
+    position: relative;
+}
+
+
+
+/*Lenguajes*/
+
+div.conocimientos{
+    position: relative;
+    height: auto;
+}
+
+div.conocimientos::before{
+    /*Imagen de fondo del contador (Falla en Cloud9)*/
+    background-image: url(../img/Programming.jpg);
+    content: '';
+}
+
+div.lenguajes{
+    position: relative;
 }
 
 
