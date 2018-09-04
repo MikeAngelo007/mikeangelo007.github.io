@@ -430,6 +430,7 @@ div.project{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width:768px){
@@ -479,6 +480,27 @@ div.study{
     position: relative;
 }
 
+div.study h2{
+    text-shadow: 2px 2px 12px #BCBEC9;
+}
+div.study h2::after{
+    color: #000;
+}
+
+div.study p{
+    color: #BCBEC9;
+    text-align: center;
+    font-size: 1.3em;
+}
+div.study h3{
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+}
+div.study h4{
+    text-align: center;
+    text-shadow: 1px 1px 5px white;
+}
+
 
 
 /*Lenguajes*/
@@ -496,6 +518,45 @@ div.conocimientos::before{
 
 div.lenguajes{
     position: relative;
+}
+
+div.lenguajes h2{
+    color: white;
+    text-shadow: 2px 2px 10px #000;
+}
+
+div.lenguajes p{
+    color: #dedfe3;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
+    text-shadow: 1px 1px 10px black;
+}
+
+
+div.lenguajes p::before{
+    font-family: 'Font Awesome 5 Free';
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 18px;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    content: '\f00c';
+    font-weight: 900;
+
+    margin-right: 5px;
+}
+
+div.lenguajes p.progress::before{
+    font-family: 'Font Awesome 5 Free';
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 18px;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    content: '\f110';
+    font-weight: 900;
 }
 
 
